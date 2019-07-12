@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: discovery-service
+management:
+  security:
+    enabled: false
+server:
+  port: 8761
+eureka:
+  environment: default
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
